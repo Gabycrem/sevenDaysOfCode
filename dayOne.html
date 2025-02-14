@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/days.css">
+    <!-- Incluye los estilos de Prism para poder mostrar el código como tal-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+    <title>7 Days Of Code - Day One</title>
+</head>
+<body class="body">
+    <header class="header">
+        <a class="header__link" href="index.html"><img class="header__link__img" src="assets/img/headerOne.png" alt="imagenDeHeader" srcset=""></a>
+        <nav class="header__nav">
+            <a class="header__nav__item active" href="#">Day 1</a>
+            <a class="header__nav__item dayFalse" href="dayTwo.html">Day 2</a>
+            <a class="header__nav__item dayFalse" href="#">Day 3</a>
+            <a class="header__nav__item dayFalse" href="#">Day 4</a>
+            <a class="header__nav__item dayFalse" href="#">Day 5</a>
+            <a class="header__nav__item dayFalse" href="#">Day 6</a>
+            <a class="header__nav__item dayFalse" href="#">Day 7</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__title">7 Days Of Code</h1>
+        <h2 class="main__title">DAY 1</h2>
+        <p>La tarea de hoy es reescribir el código a continuación para que imprima la información de manera correcta,
+                que tenga sentido y sin errores:</p>
+
+        <div class="main__contain__code">
+            <button class="main__contain__code__copy-button" onclick="copyCode()">Copiar</button> 
+            <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
+let numeroUn = 1
+               
+let stringUn = '1'
+               
+let numeroTreinta = 30
+               
+let stringTreinta = '30'
+               
+let numeroDiez = 10
+               
+let stringDiez = '10'
+               
+           
+               
+if (COMPARAR numeroUn y stringUn) {
+               
+    console.log('Las variables numeroUn y stringUn tienen el mismo valor, pero tipos diferentes')
+               
+} else {
+               
+    console.log('Las variables numeroUn y stringUn no tienen el mismo valor')
+               
+}
+               
+                
+               
+if (COMPARAR numeroTreinta y stringTreinta) {
+               
+    console.log('Las variables numeroTreinta y stringTreinta tienen el mismo valor y el mismo tipo')
+               
+} else {
+               
+    console.log('Las variables numeroTreinta y stringTreinta no tienen el mismo tipo')
+               
+}
+               
+                
+               
+if (COMPARAR numeroDiez y stringDiez) {
+               
+    console.log('Las variables numeroDiez y stringDiez tienen el mismo valor, pero tipos diferentes')
+               
+} else {
+               
+    console.log('Las variables numeroDiez y stringDiez no tienen el mismo valor')
+               
+}
+           </code></pre>
+        </div>
+        
+        <h2 class="main__title">Resolución</h2>
+        <button class="main__contain__resolution_btn" id="showBtn" onclick="showResolution()">Mostrar Resolución</button>
+        <button class="main__contain__resolution_btn" id="removeBtn" onclick="removeResolution()">Ocultar Resolución</button>
+        <div class="main__contain__code resolution" id="resolution">
+            <button class="main__contain__code__copy-button" onclick="copyCode()">Copiar</button> 
+            <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
+let numeroUn = 1;
+let stringUn = '1';
+let numeroTreinta = 30;
+let stringTreinta = '30';
+let numeroDiez = 10;
+let stringDiez = '10';
+
+
+//COMPARAR numeroUn y stringUn
+if (numeroUn == stringUn && numeroUn !== stringUn) {
+    console.log('Las variables numeroUn y stringUn tienen el mismo valor, pero tipos diferentes');
+} else {
+    console.log('Las variables numeroUn y stringUn no tienen el mismo valor');
+}
+
+ //COMPARAR numeroTreinta y stringTreinta
+if (numeroTreinta === stringTreinta) {
+    console.log('Las variables numeroTreinta y stringTreinta tienen el mismo valor y el mismo tipo');
+} else {
+    console.log('Las variables numeroTreinta y stringTreinta no tienen el mismo tipo');
+}
+
+//COMPARAR numeroDiez y stringDiez
+if (numeroDiez == stringDiez && numeroDiez !== stringDiez) {
+    console.log('Las variables numeroDiez y stringDiez tienen el mismo valor, pero tipos diferentes');
+} else {
+    console.log('Las variables numeroDiez y stringDiez no tienen el mismo valor');
+}
+            </code></pre>
+        </div>
+        
+        
+    </main>
+
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dayOne.js"></script>
+    
+    <!-- Incluye el script de Prism -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+
+</body>
+</html>

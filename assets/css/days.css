@@ -1,0 +1,27 @@
+.header__link{
+    padding: 2%;
+}
+
+.main__contain__code{
+    position: relative;
+}
+
+.main__contain__resolution{
+    padding: 1%;    
+}
+
+#removeBtn{
+    display: none;
+}
+.main__contain__code.resolution{
+    display: none;
+}
+
+.main__contain__pre{
+    border: 3px solid var(--tertiary-color);
+    border-radius: 1%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
