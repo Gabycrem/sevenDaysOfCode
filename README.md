@@ -23,6 +23,22 @@ Para hacer la experiencia más interactiva, agregué algunas funcionalidades a l
 
 ---
 
+## 📸 Capturas de pantalla  
+
+### Pantalla principal  
+![Pantalla principal](./assets/img/7DaysOfCode-ppal.png) 
+
+### Pantalla desafío día 1  
+![Desafío día 1](./assets/img/7DaysOfCode-cap1.png)
+
+### Pantalla desafío día 1  
+![Desafío Propuesto](./assets/img/7DaysOfCode-cap3.png) 
+
+### Pantalla desafío día 1  
+![Desafío Resuelto](./assets/img/7DaysOfCode-cap2.png)
+
+---  
+
 ## 📚 Estructura del proyecto
 
 ```
