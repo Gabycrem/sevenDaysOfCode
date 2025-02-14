@@ -19,3 +19,17 @@ function removeResolution(){
     document.getElementById('showBtn').style.display = 'block';
     return;
 }
+
+function updateLinkText(){
+    document.querySelectorAll('.header__nav__item').forEach((link, index) => {
+        if (window.matchMedia("(max-width: 700px)").matches){
+            link.textContent = index + 1;
+        } else {
+            link.textContent = `Day ${index + 1}`;
+        }
+        
+    })
+}
+
+updateLinkText();
+window.addEventListener("resize", updateLinkText);

@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     padding: 5%;
-    font-size: 24px;
+    font-size: 16px;
     font-family: var(--font-family);
     gap: 2.5rem;
     align-items: center;
@@ -68,6 +68,10 @@
 
 .main__title{
     text-align: center;
+}
+
+.main__texto{
+    font-size: 24px;
 }
 
 .main__contain{
@@ -82,6 +86,7 @@
     background-color: var(--primary-color);
     color: var(--secondary-color);
     width: 20%;
+    min-width: 200px;
     padding: 16px 0;
     font-family: var(--font-family);
 }
@@ -95,3 +100,42 @@
     padding-left: 3.5rem;
 }
 
+/*----------------- RESPONSIVE-------------- */
+
+@media (width <= 1200px){
+    .main{
+        font-size: 14px;
+    }
+    .main__title{
+        font-size: 36px;
+    }
+    .main__texto{
+        font-size: 24px;
+    }
+}
+
+@media (width <= 1000px){
+    .main{
+        font-size: 12px;
+    }
+}
+
+@media (width <= 900px){
+    .main{
+        font-size: 10px;
+    }
+}
+
+@media (width <= 750px){
+    .main{
+        font-size: 8px;
+    }
+}
+
+@media (width <= 630px){
+    .main{
+        font-size: 7px;
+    }
+
+
+}
