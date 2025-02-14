@@ -20,6 +20,7 @@ function removeResolution(){
     return;
 }
 
+
 function updateLinkText(){
     document.querySelectorAll('.header__nav__item').forEach((link, index) => {
         if (window.matchMedia("(max-width: 700px)").matches){

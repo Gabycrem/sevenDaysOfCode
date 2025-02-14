@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #000000;
     --secondary-color: #FFFFFF;
     --tertiary-color: #F9FF00;
@@ -6,13 +6,13 @@
     --font-family: monospace;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body{
+.body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,22 +22,22 @@
     margin: auto;
 }
 
-.header{
+.header {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.header__nav{
+.header__nav {
     width: 100%;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     gap: 3%;
 }
 
-.header__nav__item{
+.header__nav__item {
     text-decoration: none;
     text-align: center;
     color: var(--secondary-color);
@@ -45,18 +45,18 @@
     border-radius: 8px;
     border: 3px solid var(--tertiary-color);
     width: 100%;
-    
+
 }
 
-.header__nav__item.dayFalse{
+.header__nav__item.dayFalse {
     background-color: var(--disabled-color);
 }
 
-.header__nav__item.dayFalse:hover{
-    cursor:no-drop;
+.header__nav__item.dayFalse:hover {
+    cursor: no-drop;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     padding: 5%;
@@ -66,21 +66,21 @@
     align-items: center;
 }
 
-.main__title{
+.main__title {
     text-align: center;
 }
 
-.main__texto{
+.main__texto {
     font-size: 24px;
 }
 
-.main__contain{
+.main__contain {
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
 }
 
-.main__contain__resolution_btn{
+.main__contain__resolution_btn {
     border: 3px solid var(--tertiary-color);
     border-radius: 8px;
     background-color: var(--primary-color);
@@ -91,49 +91,51 @@
     font-family: var(--font-family);
 }
 
-.main__contain__resolution_btn:hover{
+.main__contain__resolution_btn:hover {
     cursor: pointer;
     background-color: var(--disabled-color);
 }
 
-.main__contain__items{
+.main__contain__items {
     padding-left: 3.5rem;
 }
 
 /*----------------- RESPONSIVE-------------- */
 
-@media (width <= 1200px){
-    .main{
+@media (width <=1200px) {
+    .main {
         font-size: 14px;
     }
-    .main__title{
+
+    .main__title {
         font-size: 36px;
     }
-    .main__texto{
+
+    .main__texto {
         font-size: 24px;
     }
 }
 
-@media (width <= 1000px){
-    .main{
+@media (width <=1000px) {
+    .main {
         font-size: 12px;
     }
 }
 
-@media (width <= 900px){
-    .main{
+@media (width <=900px) {
+    .main {
         font-size: 10px;
     }
 }
 
-@media (width <= 750px){
-    .main{
+@media (width <=750px) {
+    .main {
         font-size: 8px;
     }
 }
 
-@media (width <= 630px){
-    .main{
+@media (width <=630px) {
+    .main {
         font-size: 7px;
     }
 
