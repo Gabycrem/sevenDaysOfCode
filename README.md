@@ -39,6 +39,13 @@ Para hacer la experiencia más interactiva, agregué algunas funcionalidades a l
 
 ---  
 
+## 🌐 Demo  
+
+Puedes ver una demostración en vivo alojada en Vercel:  
+[https://seven-days-of-code-iota.vercel.app/](https://seven-days-of-code-iota.vercel.app/).  
+
+---  
+
 ## 📚 Estructura del proyecto
 
 ```
@@ -90,6 +97,9 @@ Si deseas realizar modificaciones, es recomendable tener instalado **Node.js** (
 - **HTML5**
 - **CSS3**
 - **JavaScript**
+
+## 🚀 Estado del proyecto
+📌 **En desarrollo**
 
 ## 🤝 Contribuciones  
 
