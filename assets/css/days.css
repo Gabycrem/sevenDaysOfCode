@@ -2,6 +2,27 @@
     padding: 2%;
 }
 
+.main__contain__resolution_btn {
+    border: 3px solid var(--tertiary-color);
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    width: 20%;
+    min-width: 200px;
+    padding: 16px 0;
+    font-family: var(--font-family);
+}
+
+.main__contain__resolution_btn{
+    text-decoration: none;
+    text-align: center;
+}
+
+.main__contain__resolution_btn:hover {
+    cursor: pointer;
+    background-color: var(--disabled-color);
+}
+
 .main__contain__resolution{
     padding: 1%;    
 }
@@ -11,6 +32,32 @@
 }
 .main__contain__code.resolution{
     display: none;
+    position: relative;
+}
+
+
+.form-resolution{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px 0;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.resolution__input{
+    border-radius: 8px;
+    border: 3px solid var(--tertiary-color);
+    background-color: var(--disabled-color);
+    color: var(--secondary-color);
+    padding: 5px;
+    min-width: 30%;
 }
 
 .main__contain__pre{
@@ -25,3 +72,13 @@
 }
 
 
+/* Responsive para DayTwo */
+
+@media (width <= 840px){
+     .form-group{
+        flex-direction: column;
+    }
+    .resolution__input{
+        width: 100%;
+    }
+}

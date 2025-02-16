@@ -5,16 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/days.css">
+        <link rel="stylesheet" href="assets/css/dayTwo.css">
         <!-- Incluye los estilos de Prism para poder mostrar el código como tal-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
         <title>7 Days Of Code - Day Two</title>
     </head>
 <body class="body">
     <header class="header">
-        <img class="header__img" src="assets/img/headerTwo.png" alt="imagenDeHeader" srcset="">
+        <a class="header__link" href="index.html"><img class="header__link__img" src="assets/img/headerTwo.png"
+            alt="imagenDeHeader" srcset=""></a>
         <nav class="header__nav">
             <a class="header__nav__item" href="dayOne.html">Day 1</a>
-            <a class="header__nav__item dayFalse active" href="#">Day 2</a>
+            <a class="header__nav__item active" href="#">Day 2</a>
             <a class="header__nav__item dayFalse" href="dayThree.html">Day 3</a>
             <a class="header__nav__item dayFalse" href="dayFour.html">Day 4</a>
             <a class="header__nav__item dayFalse" href="dayFive.html">Day 5</a>
@@ -25,21 +27,55 @@
     <main class="main">
         <h1 class="main__title">7 Days Of Code</h1>
         <h2 class="main__title">DAY 2</h2>
-        <p>ACÁ IRÁ LA CONSIGNA</p>
 
         <div class="main__contain__code">
-            <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
-<!-- SI LO HAY, ACÁ IRÁ EL CÓDIGO PROPUESTO PARA MODIFICAR -->
-           </code></pre>
+            <div class="main__contain main__texto">
+                <p>¡Bienvenido a mi proyecto <strong>7 Días de Código</strong>! Durante una semana, estaré resolviendo
+                    distintos desafíos de lógica de programación, poniendo a prueba mis habilidades y mejorando cada día.
+                </p>
+    
+                <p>Hoy vamos a desarrollar un programa simulando una aplicación con intereacción. </p>
+    
+                <p><strong>💡 Debe pedir al usuario responder 3 preguntas:</strong></p>
+                <ul class="main__contain__items">
+                    <li>¿Cuál es tu nombre?</li>
+                    <li>¿Cuántos años tienes?</li>
+                    <li>¿Qué lenguaje de programación estás estudiando?</li>
+                </ul>
+                <p>A medida que se hagan las preguntas, la persona que esté usando el programa debe responder cada una de ellas.</p>
+                <p>Al final, el sistema mostrará el mensaje:</p>
+                <p>"Hola [nombre], tienes [edad] años y ya estás aprendiendo [lenguaje]!"</p>
+                <p>¡Estoy lista para comenzar! 🚀</p>
+            </div>
+            <!-- <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
+                No hay código propuesto.  
+           </code></pre> -->
         </div>
         
         <h2 class="main__title">Resolución</h2>
-        <button class="main__contain__resolution_btn" id="showBtn" onclick="showResolution()">Mostrar Resolución</button>
-        <button class="main__contain__resolution_btn" id="removeBtn" onclick="removeResolution()">Ocultar Resolución</button>
-        <div class="main__contain__code resolution" id="resolution">
-            <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
-<!-- ACÁ IRÁ MI RESOLUCIÓN DEL DESAFÍO -->
-            </code></pre>
+        <a href="dayTwoResolution.html" class="main__contain__resolution_btn">Mostrar Resolución</a>
+        <div class="main__contain__code resolution" >
+            <form class="form-resolution main__texto">
+                <p>Bienvenid@ usuari@, te pido que contestes las siguientes preguntas: </p>
+                <div class="form-group">
+                    <label for="nombre" id="lblName">¿Cuál es tu nombre? </label>
+                    <input type="text" id="nombre" class="resolution__input" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad" id="lblEdad">¿Cuántos años tienes?</label>
+                    <input type="text"  id="edad" class="resolution__input" required>
+                </div>
+                <div class="form-group">
+                    <label for="lenguaje" id="lblLenguajeProg">¿Qué lenguaje de programación estás estudiando?</label>
+                    <input type="text" name="lenguaje" id="lenguaje" class="resolution__input" required>
+                </div>
+                <!-- <input type="submit" value="Enviar" class="main__contain__resolution_btn" id="sendBtn" onclick="sendResponse()"> -->
+                
+            </form>
+            <button class="main__contain__resolution_btn" id="sendBtn" onclick="sendResponse()">Enviar</button>
+            
+            <!-- <pre class="main__contain__pre"><code class="language-javascript main__contain__pre__code">
+            </code></pre> -->
         </div>
         
         
@@ -50,7 +86,7 @@
         <hr class="line">
     </footer>
     <script src="assets/js/app.js"></script>
-    <script src="assets/js/dayOne.js"></script>
+    <script src="assets/js/dayTwo.js"></script>
     
     <!-- Incluye el script de Prism -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>

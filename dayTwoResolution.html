@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/days.css">
+        <!-- Incluye los estilos de Prism para poder mostrar el código como tal-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css">
+        <title>7 Days Of Code - Day Two</title>
+    </head>
+<body class="body">
+    <header class="header">
+        <a class="header__link" href="index.html"><img class="header__link__img" src="assets/img/headerTwo.png"
+            alt="imagenDeHeader" srcset=""></a>
+        <nav class="header__nav">
+            <a class="header__nav__item" href="dayOne.html">Day 1</a>
+            <a class="header__nav__item active" href="#">Day 2</a>
+            <a class="header__nav__item dayFalse" href="dayThree.html">Day 3</a>
+            <a class="header__nav__item dayFalse" href="dayFour.html">Day 4</a>
+            <a class="header__nav__item dayFalse" href="dayFive.html">Day 5</a>
+            <a class="header__nav__item dayFalse" href="daySix.html">Day 6</a>
+            <a class="header__nav__item dayFalse" href="daySeven.html">Day 7</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h1 class="main__title">7 Days Of Code</h1>
+        <h2 class="main__title">DAY 2</h2>
+
+        <div class="main__contain__code">
+            <div class="main__contain main__texto" id="resolution">
+                <form class="form-resolution main__texto">
+                    <p>Bienvenid@ usuari@, te pido que contestes las siguientes preguntas: </p>
+                    <div class="form-group">
+                        <label for="nombre" id="lblName">¿Cuál es tu nombre? </label>
+                        <input type="text" id="nombre" class="resolution__input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad" id="lblEdad">¿Cuántos años tienes?</label>
+                        <input type="text"  id="edad" class="resolution__input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lenguaje" id="lblLenguajeProg">¿Qué lenguaje de programación estás estudiando?</label>
+                        <input type="text" name="lenguaje" id="lenguaje" class="resolution__input" required>
+                    </div>
+                    <!-- <input type="submit" value="Enviar" class="main__contain__resolution_btn" id="sendBtn" onclick="sendResponse()"> -->
+                    
+                </form>
+                <button class="main__contain__resolution_btn main__texto" id="sendBtn" onclick="sendResponse()">Enviar</button>
+                <a href="dayTwo.html" class="main__contain__resolution_btn ">Volver</a>
+            </div>
+        </div>
+        
+    
+        
+        
+    </main>
+
+    <footer class="footer">
+        <p>[ CODED by G∆BΨ₵RΣM ] &copy; 2025_ </p>
+        <hr class="line">
+    </footer>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/dayTwo.js"></script>
+    
+    <!-- Incluye el script de Prism -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
