@@ -36,11 +36,7 @@
 }
 
 
-.form-resolution{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
+
 
 .form-group{
     display: flex;
@@ -60,17 +56,29 @@
     min-width: 30%;
 }
 
-.main__contain__pre{
+.main__contain__pre, .form-resolution{
     border: 3px solid var(--tertiary-color);
     border-radius: 1%;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--disabled-color);
+    color: var(--secondary-color);
     max-width: 100%;
     overflow-x: auto;
     white-space: pre-wrap;
     word-wrap: break-word;
 }
 
+.form-resolution{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.options-btn{
+    display: flex;
+    gap: 30px;
+}
 
 /* Responsive para DayTwo */
 
